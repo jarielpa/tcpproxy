@@ -11,4 +11,4 @@ JAVA_ARGS=listenport tunnelhost tunnelport [encoding]
 
 ## Port forwarding
 
-oc port-forward <local-port>:<listenport>
+oc port-forward local-port:listenport
