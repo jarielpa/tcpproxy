@@ -1,0 +1,51 @@
+<<<<<<< HEAD
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+target/
+
+# Eclipse project files
+.classpath
+.project
+.metadata
+.settings
+
+# Intellij project files
+*.iml
+*.iml~
+*.ipr
+*.iws
+.idea/
+
+# tmp files
+*.tmp
+tmp.*
+=======
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+>>>>>>> Initial commit
