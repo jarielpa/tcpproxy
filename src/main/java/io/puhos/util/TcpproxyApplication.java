@@ -14,7 +14,7 @@ public class TcpproxyApplication {
 		SpringApplication.run(TcpproxyApplication.class, args);
 		
 		if (args.length != 3 && args.length != 4) {
-            System.err.println("Usage: java TcpTunnel listenport tunnelhost tunnelport [encoding]");
+            System.err.println("Usage: java -jar <jar-file> listenport tunnelhost tunnelport [encoding]");
             System.exit(1);
         }
         int listenport = Integer.parseInt(args[0]);
@@ -26,7 +26,7 @@ public class TcpproxyApplication {
         } else {
             enc = "8859_1";
         }
-        System.out.println("TcpTunnel: ready to rock and roll on port " + listenport);
+        System.out.println("ready to rock and roll on port " + listenport);
         ServerSocket ss = new ServerSocket(listenport);
         while (true) {
             // accept the connection from my client
@@ -34,7 +34,7 @@ public class TcpproxyApplication {
 
             // connect to the thing I'm tunnelling for
             Socket st = new Socket(tunnelhost, tunnelport);
-            System.out.println("TcpTunnel: tunnelling port " + listenport + " to port " + tunnelport + " on host " + tunnelhost);
+            System.out.println("Tunnelling port " + listenport + " to port " + tunnelport + " on host " + tunnelhost);
 
             // relay the stuff thru
             new Relay(sc.getInputStream(), st.getOutputStream(), System.out, enc).start();

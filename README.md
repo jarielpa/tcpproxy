@@ -3,7 +3,7 @@ Spring boot tcp proxy based on Apache's TCPMon 1.0 TcpTunnel
 
 ## Usage
 
-Usage: java TcpTunnel listenport tunnelhost tunnelport [encoding]
+Usage: java -jar tcpproxy.jar listenport tunnelhost tunnelport [encoding]
 
 ## To run in OpenShit (OCP 3.4)
 
