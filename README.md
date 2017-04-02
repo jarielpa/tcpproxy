@@ -7,7 +7,7 @@ Usage: java -jar tcpproxy.jar listenport tunnelhost tunnelport [encoding]
 
 ## To run in OpenShit (OCP 3.4)
 
-        oc new-app . registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift:latest --allow-missing-images
+   oc new-app . registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift:latest --allow-missing-images
 
 	mvn clean install
 	
